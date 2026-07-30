@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Calculadora Web</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<main class="calculadora">
+
+    <h1>Calculadora</h1>
+
+    <div class="visor">
+        <h2 id="resultado">Resultado:</h2>
+    </div>
+
+    <div class="entradas">
+
+        <input 
+            type="number" 
+            id="numero1" 
+            placeholder="Primeiro número"
+        >
+
+        <input 
+            type="number" 
+            id="numero2" 
+            placeholder="Segundo número"
+        >
+
+    </div>
+
+   <div class="botoes">
+
+    <button class="operacao" onclick="somar()">+</button>
+
+    <button class="operacao" onclick="subtrair()">−</button>
+
+    <button class="operacao" onclick="multiplicar()">×</button>
+
+    <button class="operacao" onclick="dividir()">÷</button>
+
+    <button class="limpar" onclick="limparnumeros()">Limpar números</button>
+
+    <button class="limpar" onclick="limparHistorico()">Limpar Histórico</button>
+
+    <button class="tema" onclick="modoEscuro()">🌙 Modo Escuro</button>
+
+    <button class="copiar" onclick="copiarResultado()">📋 Copiar Resultado</button>
+
+</div>
+
+    <section class="historico">
+
+        <h3>Histórico de cálculos</h3>
+
+        <ul id="historico"></ul>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #fff8f2;
+    color: #4b2e20;
+}
+
+
+
+/* MENU */
+
+header {
+    background-color: #6f4e37;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav h2 {
+    color: white;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #ffd7a8;
+}
+
+
+
+/* CAPA */
+
+.inicio {
+
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("imagens/ambiente.jpeg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+.inicio-texto {
+
+    max-width: 700px;
+
+}
+
+
+.inicio h1 {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.inicio p {
+
+    font-size: 22px;
+
+}
+
+
+
+/* BOTÕES */
+
+
+button {
+
+    background-color: #6f4e37;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    background-color: #4b2e20;
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+/* SEÇÕES */
+
+
+section {
+
+    padding: 60px 10%;
+
+    text-align: center;
+
+}
+
+
+section h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* CARDS */
+
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+
+    background: white;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
+
+
+/* GALERIA */
+
+
+.galeria {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.galeria img {
+
+    width: 300px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.galeria img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+/* FORMULÁRIO */
+
+
+form {
+
+    max-width: 500px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+input,
+textarea {
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+    font-size: 16px;
+
+}
+
+
+textarea {
+
+    height: 120px;
+
+    resize: none;
+
+}
+
+
+
+
+
+/* RODAPÉ */
+
+
+footer {
+
+    background-color: #6f4e37;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:700px){
+
+
+nav {
+
+    flex-direction: column;
+
+}
+
+
+.menu {
+
+    margin-top: 15px;
+
+}
+
+
+.menu a {
+
+    display: block;
+
+    margin: 10px;
+
+}
+
+
+.inicio h1 {
+
+    font-size: 32px;
+
+}
+
+
+section {
+
+    padding: 40px 5%;
+
+}
+
+
+.galeria img {
+
+    width: 90%;
+
+}
+
+
+}
+
+
+
+
+
